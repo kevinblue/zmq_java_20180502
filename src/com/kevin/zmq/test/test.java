@@ -60,7 +60,7 @@ public class test {
      */
     @Test
     public void test4(){
-    	//同样的事情做了很多次
+    	//同样的事情做了很多次ddd
     			for(int y=0; y<4; y++) {
     				for(int x=0; x<5; x++) {
     					System.out.print("*");
