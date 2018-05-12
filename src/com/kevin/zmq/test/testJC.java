@@ -22,6 +22,8 @@ class D extends C{
 		System.out.println("say DD");
 	}
 }
+
+
 public class testJC {
 
 	public static void main(String[] args) {
