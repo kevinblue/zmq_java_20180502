@@ -19,6 +19,7 @@ public class test {
     		f=f*i;
     		System.out.println(f);
     	}
+    	
     	System.out.println(f);
     }
 }
