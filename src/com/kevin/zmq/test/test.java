@@ -22,5 +22,73 @@ public class test {
     	
     	System.out.println(f);
     	System.out.println("这个是方法");
+	 }
+    @Test
+    public void test1(){
+    	int f=1;
+    	int i=1;
+    	while(i<5){
+    		f=f*i;
+    		i=i+1;
+    		System.out.println(f);
+    		
+    	}
     }
+    @Test
+    public void test3(){
+    	
+    	int i=1;
+    	int f=1;
+    	do{	 		
+    		f=f*i;
+    		i=i+1;
+    		System.out.println("i="+i);
+    		System.out.println("f="+f);
+    	}while(i<5);
+    		System.out.println("退出循环体");
+    	
+    		int sum = 0;
+    		int x = 1;
+    		do{
+    			sum+=x;
+    			x++;
+    		}while (x<=100);
+    		System.out.println(sum);
+    }
+    /**
+     * 嵌套循环
+     */
+    @Test
+    public void test4(){
+    	//同样的事情做了很多次
+    			for(int y=0; y<4; y++) {
+    				for(int x=0; x<5; x++) {
+    					System.out.print("*");
+    				}
+    				System.out.println();
+    			}
+    			
+    			for(int x=0;x<5;x++){
+    				for(int y=0;y<x;y++){
+    					System.out.print("#");
+    				}
+    				System.out.println();
+    			}
+    			
+    			for(int x=0;x<5;x++){
+    				for(int y=0;y<=x;y++){
+    					System.out.print("#");
+    				}
+    				System.out.println();
+    			}
+    			for(int x=5;x>=0;x--){
+    				for(int y=0;y<=x;y++){
+    					System.out.print("#");
+    				}
+    				System.out.println();
+    			}
+    }
+    
+   
+    
 }
