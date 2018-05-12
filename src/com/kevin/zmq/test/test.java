@@ -21,5 +21,6 @@ public class test {
     	}
     	
     	System.out.println(f);
+    	System.out.println("这个是方法");
     }
 }
