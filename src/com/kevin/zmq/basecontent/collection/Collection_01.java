@@ -2,7 +2,10 @@ package com.kevin.zmq.basecontent.collection;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Iterator;
+import java.util.Map.Entry;
 
 import org.junit.Test;
 
@@ -92,6 +95,41 @@ public class Collection_01 {
 		while(it.hasNext()){
 			System.out.println(it.next());
 		}
+		
+	}
+	@Test
+	public void testSet(){
+		HashSet<String> ss =new HashSet<String>();
+		ss.add("kk01");
+		ss.add("kk02");
+		ss.add("kk03");
+		ss.add("kk04");
+		/**for(int i=0;i<ss.size();i++){
+			System.out.println(ss[i]);
+		}*/
+		//way1:增强for循环
+		for(String a  :ss){
+			System.out.println(a);
+			
+		}
+		System.out.println();
+		//way2:迭代器
+		Iterator it=ss.iterator();
+		while(it.hasNext()){
+			System.out.print(it.next());
+		}
+	
+	}
+	@Test
+	public void testMap(){
+		HashMap<String,String> ma=new HashMap<String,String>();
+		ma.put("01", "jianjian01");
+		ma.put("02", "jianjian02");
+		ma.put("03", "jianjian03");
+		ma.put("04", "jianjian04");
+		ma.put("05", "jianjian05");
+		//way
+		Entry<String, String> entry = (Entry<String, String>) ma.entrySet();
 		
 	}
 
