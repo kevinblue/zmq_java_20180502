@@ -8,7 +8,7 @@ import org.junit.Test;
 
 public class Collection_01 {
 /**
- * 结合遍历
+ * 集合遍历
  * @param args
  */
 	public static void main(String[] args) {
@@ -64,6 +64,35 @@ public class Collection_01 {
 			System.out.println(s.getAge());
 			System.out.println(s.getName());
 		}
+	}
+	/**
+	 * 遍历list的三种方式：
+	 */
+	@Test
+	public void testList(){
+		ArrayList<String> arr=new ArrayList<String>();
+		arr.add("zx01");
+		arr.add("zx02");
+		arr.add("zx03");
+		arr.add("zx04");
+		//way1:下标的方式
+		System.out.println("way1:下标的方式");
+		for(int i=0;i<arr.size();i++){
+			arr.get(i);
+			System.out.println(arr.get(i));
+		}
+		System.out.println("way2:增强for循环");
+		//way2：增强for循环
+		for(String aa:arr){
+			System.out.print(aa);
+			System.out.print("|");
+		}
+		System.out.println("way3:通过迭代器");
+		Iterator it=arr.iterator();
+		while(it.hasNext()){
+			System.out.println(it.next());
+		}
+		
 	}
 
 }
