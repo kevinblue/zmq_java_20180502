@@ -44,7 +44,7 @@ public class Collection_01 {
 		}
 	}
 	/**
-	 * Collection集合遍历：方式2：通过迭代器
+	 * Collection集合遍历：方式2：将集合装换成数组，然后在进行遍历
 	 * 
 	 * 
 	 */
